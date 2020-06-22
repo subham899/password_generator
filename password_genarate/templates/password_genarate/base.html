@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<div class="container text-center">
+    <h2>PASSWORD GENERATOR</h2>
+<form action="{% url 'new'%}">
+    <select name="length">
+        <option value="3" selected="selected">3</option>
+        <option value="4" selected="selected">4</option>
+        <option value="5" selected="selected">5</option>
+        <option value="6" selected="selected">6</option>
+        <option value="7" selected="selected">6</option>
+        <option value="8" selected="selected">8</option>
+        <option value="9" selected="selected">9</option>
+    </select>length
+    <br>
+    <input type="checkbox" name="uppercase">uppercase
+    <br>
+    <input type="checkbox" name="lowercase">lowercase
+    <br>
+    <input type="checkbox" name="numaric">numaric
+    <br>
+    <input type="checkbox" name="spical">spical
+    <br>
+    <input type="submit" class="btn btn-primary" value="password genatate">
+    <br>
+    <a href="{% url 'aboutapp' %}">About</a>
+</form>
+</div>
